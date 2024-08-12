@@ -1,3 +1,5 @@
+// classes
+
 class Car{
     constructor (make,model,year){
         this.make = make,
@@ -26,3 +28,18 @@ class User{
         return(`${this.email} has logged out successfully`)
     }
 }
+
+//abstraction
+
+const myCar = new Car("Tesla", "x-6", 2024);
+console.log(myCar);
+
+const hisCar = new Car("Toyota", "Highlander", 2020)
+console.log(hisCar);
+
+const user = new User("DevJuwon", "dev@gmail.com", 9034567778, "8khgvggc")
+console.log(user);
+
+console.log(myCar.displayInfo());
+console.log(user.login());
+
